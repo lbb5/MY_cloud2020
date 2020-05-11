@@ -15,5 +15,4 @@ spring:
 mybatis:
   #xml文件路径
   mapper-locations: classpath:mapper/*.xml
-  #对应路径下实体类的别名
   type-aliases-package: com.atguigu.springcloud.entities

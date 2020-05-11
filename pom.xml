@@ -12,6 +12,7 @@
 	<modules>
 		<module>payment8001</module>
 		<module>order</module>
+		<module>comment</module>
 	</modules>
 
 

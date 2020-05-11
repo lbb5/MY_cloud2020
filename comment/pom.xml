@@ -8,7 +8,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>order</artifactId>
+
+    <artifactId>comment</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -56,5 +58,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
