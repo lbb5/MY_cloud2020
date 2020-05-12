@@ -2,6 +2,7 @@ package com.atguigu.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Author libingbing
@@ -9,8 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Description 启动类
  */
 @SpringBootApplication
-public class paymentApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(paymentApplication.class);
+@EnableEurekaClient
+public class Payment8002Application {
+    public static void main(String[] args) {SpringApplication.run(Payment8002Application.class);
     }
 }

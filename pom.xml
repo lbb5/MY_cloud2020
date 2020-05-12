@@ -13,6 +13,9 @@
 		<module>payment8001</module>
 		<module>order</module>
 		<module>comment</module>
+		<module>eureka-7001</module>
+        <module>eureka-7002</module>
+		<module>payment8002</module>
 	</modules>
 
 
@@ -102,6 +105,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+<!--				<version>1.5.8.RELEASE</version>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>repackage</id>-->
+<!--						<configuration>-->
+<!--							<executable>true</executable>-->
+<!--							<classifier>exec</classifier>-->
+<!--						</configuration>-->
+<!--					</execution>-->
+<!--				</executions>-->
 				<configuration>
 					<fork>true</fork>
 					<addResources>true</addResources>

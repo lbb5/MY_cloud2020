@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.Controller;
+package com.atguigu.springcloud.controller;
 
 import com.atguigu.springcloud.Service.PaymentService;
 import com.atguigu.springcloud.entities.CommonResult;
@@ -37,5 +37,4 @@ public class PaymentController {
         log.info("payment:"+paymentService.findById(id));
         return new CommonResult(200, "查询成功", paymentService.findById(id));
     }
-
 }
