@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -20,6 +21,8 @@ import org.springframework.web.bind.annotation.*;
 public class PaymentController {
     @Autowired
     private PaymentService paymentService;
+    @Value("${server.port}")
+    private String serverPort;
 
     @PostMapping("/create")
     public CommonResult create(@RequestBody Payment payment) {
@@ -35,6 +38,6 @@ public class PaymentController {
     public CommonResult<Payment> findById( Long id) {
         Log log = LogFactory.getLog(PaymentController.class);
         log.info("payment:"+paymentService.findById(id));
-        return new CommonResult(200, "查询成功", paymentService.findById(id));
+        return new CommonResult(200, "查询成功,serverPort ="+serverPort, paymentService.findById(id));
     }
 }

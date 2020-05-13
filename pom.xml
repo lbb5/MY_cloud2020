@@ -16,6 +16,9 @@
 		<module>eureka-7001</module>
         <module>eureka-7002</module>
 		<module>payment8002</module>
+        <module>payment8006</module>
+        <module>order-consul</module>
+		<module>order-openFeign</module>
 	</modules>
 
 
