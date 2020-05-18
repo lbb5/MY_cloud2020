@@ -35,10 +35,20 @@ public class PaymentController {
     }
 
     @GetMapping("/findById")
-    public CommonResult<Payment> findById(Long id) {
+    public CommonResult<Payment> findById(@RequestParam("id") Long id) {
         Log log = LogFactory.getLog(PaymentController.class);
-        log.info("payment:" + paymentService.findById(id));
-        return new CommonResult(200, "查询成功,serverPort =" + serverPort, paymentService.findById(id));
+        log.info("payment:"+paymentService.findById(id));
+        return new CommonResult(200, "查询成功,serverPort ="+serverPort, paymentService.findById(id));
+    }
+
+    @GetMapping("/timeOut")
+    public String timeOut(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "8002";
     }
 }
 

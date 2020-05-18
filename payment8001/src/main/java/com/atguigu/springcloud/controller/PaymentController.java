@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @Author libingbing
  * @Date 2020-05-11 21:50
@@ -35,9 +37,19 @@ public class PaymentController {
     }
 
     @GetMapping("/findById")
-    public CommonResult<Payment> findById( Long id) {
+    public CommonResult<Payment> findById(@RequestParam("id") Long id) {
         Log log = LogFactory.getLog(PaymentController.class);
         log.info("payment:"+paymentService.findById(id));
         return new CommonResult(200, "查询成功,serverPort ="+serverPort, paymentService.findById(id));
     }
+    @GetMapping("/timeOut")
+    public String timeOut(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "8001";
+    }
+
 }
