@@ -20,7 +20,8 @@
         <module>order-consul</module>
 		<module>order-openFeign</module>
         <module>hystrix-payment8007</module>
-    </modules>
+		<module>hystrix_order92</module>
+	</modules>
 
 
 	<!-- 统一管理jar包版本 -->
