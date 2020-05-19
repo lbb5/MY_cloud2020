@@ -21,7 +21,8 @@
 		<module>order-openFeign</module>
         <module>hystrix-payment8007</module>
 		<module>hystrix_order92</module>
-	</modules>
+        <module>gateway9527</module>
+    </modules>
 
 
 	<!-- 统一管理jar包版本 -->
