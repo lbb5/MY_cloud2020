@@ -19,7 +19,8 @@
         <module>payment8006</module>
         <module>order-consul</module>
 		<module>order-openFeign</module>
-	</modules>
+        <module>hystrix-payment8007</module>
+    </modules>
 
 
 	<!-- 统一管理jar包版本 -->
