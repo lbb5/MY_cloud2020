@@ -25,6 +25,9 @@
         <module>configCenter3344</module>
         <module>configClient3355</module>
         <module>configClient3366</module>
+        <module>stream_rabbitmq_provider8801</module>
+        <module>stream_consume_rabbitmq8802</module>
+        <module>stream_consume_rabbitmq8803</module>
     </modules>
 
 
