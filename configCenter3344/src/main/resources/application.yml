@@ -22,7 +22,18 @@ spring:
             - cloudBus
       ##读取分支
       label: master
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
+#暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
 
 eureka:
   client:

@@ -24,6 +24,7 @@
         <module>gateway9527</module>
         <module>configCenter3344</module>
         <module>configClient3355</module>
+        <module>configClient3366</module>
     </modules>
 
 
