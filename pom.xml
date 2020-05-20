@@ -22,6 +22,8 @@
         <module>hystrix-payment8007</module>
 		<module>hystrix_order92</module>
         <module>gateway9527</module>
+        <module>configCenter3344</module>
+        <module>configClient3355</module>
     </modules>
 
 
