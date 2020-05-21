@@ -30,6 +30,7 @@
         <module>stream_consume_rabbitmq8803</module>
 		<module>cloudalibaba_payment9001_provider</module>
         <module>cloudalibaba_payment9002_provider</module>
+        <module>order_nacos83</module>
     </modules>
 
 

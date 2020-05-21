@@ -6,13 +6,13 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @Author libingbing
- * @Date 2020-05-20 16:20
+ * @Date 2020-05-20 19:10
  * @Description
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class CloudPaymentApplication {
+public class OrderNacosApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CloudPaymentApplication.class,args);
+        SpringApplication.run(OrderNacosApplication.class,args);
     }
 }
